@@ -1,0 +1,94 @@
+html {
+	width: 100%;
+}
+
+body {
+	overflow-x: hidden !important;
+}
+
+body.show-spinner > main {
+	overflow: hidden !important;
+}
+
+/* Hide everything under body tag */
+body.show-spinner > * {
+	opacity: 0;
+}
+
+/* Spinner */
+body.show-spinner::after {
+	content: " ";
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: 2px solid rgba(0, 0, 0, 0.2);
+	border-radius: 50%;
+	border-top-color: rgba(0, 0, 0, 0.3);
+	animation: spin 1s ease-in-out infinite;
+	-webkit-animation: spin 1s ease-in-out infinite;
+	left: calc(50% - 15px);
+	top: calc(50% - 15px);
+	position: fixed;
+	z-index: 1;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes spin {
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+.rtl {
+	direction: rtl;
+}
+.selection {
+	width: 100%;
+}
+
+.checkbox__row {
+	max-width: 30px !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wastage__input {
+	max-width: 80px;
+	display: none;
+}
+
+.wastage__item.active [data-js="wastage"] {
+	display: none;
+}
+
+.wastage__item.active .wastage__input {
+	display: block;
+}
+
+.account__rows .row {
+	padding-top: 15px;
+	margin-bottom: 25px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	position: relative;
+}
+
+.account__rows .row::before {
+	content: "Account Item";
+	position: absolute;
+	top: 0;
+	left: 15px;
+	transform: translate(-15px, -50%);
+	background-color: #fff;
+	font-size: 16px;
+	padding: 0 15px;
+}
+
+.account__rows .row:last-of-type {
+	margin-bottom: 50px;
+}

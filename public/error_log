@@ -1,0 +1,5 @@
+[26-Sep-2020 21:21:18 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/intuusrt/mirlab.testintu.us/system/vendor/ramsey/uuid/src/functions.php on line 34
+[03-Oct-2020 20:27:28 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/intuusrt/mirlab.testintu.us/system/vendor/ramsey/uuid/src/functions.php on line 34
+[03-Oct-2020 20:27:45 UTC] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home/intuusrt/mirlab.testintu.us/system/vendor/ramsey/uuid/src/functions.php on line 34
+[03-Oct-2020 20:28:41 UTC] PHP Warning:  require_once(/home/intuusrt/mirlab.testintu.us/../bootstrap/app.php): failed to open stream: No such file or directory in /home/intuusrt/mirlab.testintu.us/index.php on line 38
+[03-Oct-2020 20:28:41 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/intuusrt/mirlab.testintu.us/../bootstrap/app.php' (include_path='.:/opt/cpanel/ea-php70/root/usr/share/pear') in /home/intuusrt/mirlab.testintu.us/index.php on line 38

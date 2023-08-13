@@ -179,9 +179,9 @@ class TestReportController extends Controller
             'pin' => $pin,
             'id' => $patient_id,
         ];
-        if (!empty($request->email)) {
-            Mail::to($request->email)->send(new TestRegistration($mail_info));
-        }
+        // if (!empty($request->email)) {
+        //     Mail::to($request->email)->send(new TestRegistration($mail_info));
+        // }
         $data["list"] = $data;
 
         return  view('print', $data);

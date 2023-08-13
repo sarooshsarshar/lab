@@ -47,13 +47,13 @@
                     </div>
                     <div class="form-group">
                         <label>Preference Range</label>
-                        {{-- <textarea value="{{$info->prference_range}}" class="form-control" placeholder="Range" name="preference_range" rows="2" cols="45"></textarea> --}}
-                        <input type="text"  value="{{$info->prference_range}}" class="form-control" placeholder="Range" name="preference_range">
+                        <textarea value="{{$info->prference_range}}" class="form-control" placeholder="Range" name="preference_range" rows="2" cols="45"></textarea>
+                        <!-- <input type="text"  value="{{$info->prference_range}}" class="form-control" placeholder="Range" name="preference_range"> -->
                     </div>
                     <div class="form-group position-relative error-l-50">
                         <label>Test Details</label>
-                        <textarea value="{{$info->test_name}}" class="form-control" placeholder="Test Details" name="detail" rows="2" cols="45"></textarea>
-                        {{-- <input type="text" value="{{$info->test_name}}" required class="form-control" placeholder="Test Details" name="detail"> --}}
+                        <textarea value="{{$info->detail}}" class="form-control" placeholder="Test Details" name="detail" rows="4" cols="45"></textarea>
+                         <!-- <input type="text" word-break: break-word value="{{$info->detail}}" required class="form-control" placeholder="Test Details" name="detail" rows="2" cols="45"> -->
                         <div class="invalid-tooltip">
                             Test Name is required!
 

@@ -34,7 +34,7 @@
                     </div>
                     <div class="form-group position-relative error-l-50">
                         <label>Test Price</label>
-                        <input type="text" required class="form-control" placeholder="Test Price" name="price">
+                        <input type="text"  class="form-control" placeholder="Test Price" name="price">
                         <div class="invalid-tooltip">
                             Test Price is required!
 
@@ -42,7 +42,7 @@
                     </div>
                     <div class="form-group position-relative error-l-50">
                         <label>Test Duration</label>
-                        <input type="text" required class="form-control" placeholder="Test Duration" name="duration">
+                        <input type="text"  class="form-control" placeholder="Test Duration" name="duration">
                         <div class="invalid-tooltip">
                             Test Duration is required!
 
@@ -50,16 +50,16 @@
                     </div>
                     <div class="form-group position-relative error-l-50">
                         <label>Preference Range</label>
-                        {{-- <textarea id="text" name="preference_range" rows="2" cols="45"></textarea> --}}
-                        <input type="text"  class="form-control" placeholder="Range" name="preference_range">
+                        <textarea id="text" name="preference_range" rows="2" cols="45"></textarea>
+                        <!-- <input type="text" required class="form-control" placeholder="Range" name="preference_range"> -->
                         <div class="invalid-tooltip">
-                            First Name is required!
+                            Preference Range is required!
 
                         </div>
                     </div>
                     <div class="form-group position-relative error-l-50">
                         <label>Details</label>
-                        <input type="text" required class="form-control" placeholder="Test Details" name="detail">
+                        <textarea value="{{$info->detail}}" class="form-control" placeholder="Test Details" name="detail" rows="4" cols="45"></textarea>
                         <div class="invalid-tooltip">
                             Test details is required!
 

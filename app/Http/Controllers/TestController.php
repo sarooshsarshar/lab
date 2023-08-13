@@ -21,7 +21,7 @@ class TestController extends Controller
         $data["test"] = DB::table('test')
             ->join('group', 'group.id', '=', 'test.group_id')
             ->leftJoin('unit', 'unit.id', '=', 'test.unit_id')
-            ->select('test.id', 'group.id AS group_id', 'test.prference_range', 'test.unit_id', 'unit.unit_name', 'test.name AS test_name', 'test.price AS test_price', 'test.duration AS test_duration', 'group.name AS group_name')
+            ->select('test.id', 'group.id AS group_id', 'test.prference_range','test.detail', 'test.unit_id', 'unit.unit_name', 'test.name AS test_name', 'test.price AS test_price', 'test.duration AS test_duration', 'group.name AS group_name')
             ->where('test.status', 1)
             ->get();
         $data["group"] = GroupModel::all();
@@ -91,6 +91,11 @@ class TestController extends Controller
         ];
         DB::table('test')->where('id', $test_id)->update($units);
         return redirect()->route('test.index')->with(['status' => 1, 'message' => 'Test  Updated!']);
+    }
+    public function delete(TestModel $test)
+    {
+        $test->delete();
+        return redirect()->route('test.index')->with(['status' => 1, 'message' => 'Test  Deleted!']);
     }
 
     /**

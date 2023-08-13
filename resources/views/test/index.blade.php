@@ -28,6 +28,7 @@
                             <th>Test Price</th>
                             <th>Duration</th>
                             <th>Reference Range</th>
+                            <th>Detail</th>
                             <th>Unit</th>
                             <th>Group Name</th>
                             <th>Action</th>
@@ -40,12 +41,14 @@
                             <td>{{$info->test_name}}</td>
                             <td>{{$info->test_price}}</td>
                             <td>{{$info->test_duration}}</td>
-                            <td>{{$info->prference_range}}</td>
+                            <td>{!! nl2br ($info->prference_range)!!}</td>
+                            <td>{!! nl2br($info->detail)!!}</td>
                             <td>{{$info->unit_name}}</td>
                             <td>{{$info->group_name}}</td>
                             <td>
                                 <button type="button" class="btn btn-success" data-toggle="modal"
                             data-backdrop="static" data-target="#updateTest{{$info->id}}">Update Test</button>
+                            <a href="{{ route('test.delete' , $info->id) }}" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
                         @include('test.update')

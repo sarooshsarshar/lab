@@ -50,6 +50,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     Route::get('add-test', 'TestController@create')->name('test.create');
     Route::post('store-test', 'TestController@store')->name('test.store');
     Route::post('test-update/{test_id}', 'TestController@edit')->name('test.update');
+    Route::get('test-delete/{test}', 'TestController@delete')->name('test.delete');
 
     // Test Report
     Route::get('test-report', 'TestReportController@index')->name('testreport.index');

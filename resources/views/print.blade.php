@@ -26,7 +26,7 @@
                     <h1 class="brand--name">Mir Clinical Lab</h1>
                 </div>
                 <div class="clear"></div>
-                <p class="brand--description">Mir Hospital, Service More, GT Road Gujrat, Contact # 053-3513513</p>
+                <p class="brand--description">Mir Hospital, Service More, GT Road Gujrat, Contact # 053-3726616</p>
             </header>
     
             <main class="main" >
@@ -88,13 +88,13 @@
                                 <td class="bold">{{$item->values}}</td>
     
                                 <td class="bold">{{$item->unit_name}}</td>
-                                <td>{{$item->prference_range}}</td>
+                                <td style="text-align: left">{!! nl2br($item->prference_range)!!}</td>
                                 {{-- <td>{{ $item->detail }}</td> --}}
                                 {{-- <td class="text-right">  {!! nl2br($item->detail) !!}</td> --}}
                                 
                             </tr>
                             <tr>
-                               <td colspan="4" style="padding-top:25px; padding-bottom:25px; text-align: center">{!! nl2br($item->detail) !!}</td>  
+                               <td colspan="4" style="padding-top:5px; text-align: left">{!! nl2br($item->detail) !!}</td>  
                             </tr>
                             @endforeach
                         </tbody>
@@ -110,7 +110,7 @@
     
             <footer class="footer">
                 <p class="text-center bold" style="-webkit-print-color-adjust: exact">Electronically Verified Report. No signatures needed. (Not Valid For Court)</p>
-                <p class="footer--text text-center bold">Mir Hospital, Service More, GT Road Gujrat, Contact # 053-3513513</p>
+                <p class="footer--text text-center bold">Mir Hospital, Service More, GT Road Gujrat, Contact # 053-3726616</p>
                 
             </footer>
         </div>
